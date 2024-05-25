@@ -1,0 +1,84 @@
+@font-face {
+    font-family: WorkSans;
+    src: url(./assets/fonts/static/WorkSans-Regular.ttf);
+}
+*{font-family: WorkSans;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color:  hsl(270, 15%, 60%)
+}
+body{
+    background: url(./assets/images/background-pattern-desktop.svg)no-repeat;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    background: white;
+    width: 550px;
+    padding: 30px 40px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+
+.container .questions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+ .questions .q:hover{
+    color:  hsl(293, 84%, 71%);
+}
+
+h1{
+    font-weight: 800;
+    color:hsl(292, 42%, 14%)
+}
+h4{
+    color: hsl(292, 42%, 14%);
+}
+.hidden{
+    display: none;
+}
+.plus:hover{
+    cursor: pointer;
+
+}
+
+.minus:hover{
+    cursor: pointer;
+
+}
+.plus:active
+hr{
+border: 1px solid hsl(275, 100%, 97%);
+}
+@media (max-width:565px){
+    .container{
+        width: 400px;
+    }
+}
+@media (max-width:400px){
+    .container{
+        width: 350px;
+    }
+}
